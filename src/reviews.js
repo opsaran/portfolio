@@ -9,6 +9,8 @@ const myReducer = (Posts, action) => {
       return [...Posts, newPost(action.payload.message, action.payload.name)];
     case ACTIONS.DELETE_POST:
       return Posts.filter((post) => post.id !== action.payload.id);
+    default: return Posts;
+
   }
 };
 
@@ -38,23 +40,23 @@ const Reviews = () => {
         <form onSubmit={handleSubmit}>
           <h2>Post your review of this portfolio:</h2>
           <div>
-            
+            <label>Name:</label>
             <input
               required
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="Name"
+              
             />
           </div>
           <div>
-            
+            <label>Review:</label>
             <input
               required
               type="textarea"
               value={message}
               onChange={(e) => setmessage(e.target.value)}
-              placeholder="I Think it's great..."
+              className="reviewtext"
             />
           </div>
           <button type="submit">Post</button>
