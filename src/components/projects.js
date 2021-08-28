@@ -93,7 +93,7 @@ const Projects = () => {
                 </ul>
                 <div className="project-links">
                   <a
-                    href="https://opsaran-quizapp.netlify.app/"
+                    href="https://opsaran.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -101,7 +101,7 @@ const Projects = () => {
                     <i className="fas fa-external-link-alt"></i>
                   </a>
                   <a
-                    href="https://github.com/opsaran/quiz-app-frontend"
+                    href="https://github.com/opsaran/portfolio"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
