@@ -8,10 +8,16 @@ const Skillset = () => {
         </div>
         <ul>
           <li>
+            <i className="devicon-typescript-plain"></i>
+          </li>
+          <li>
             <i className="devicon-html5-plain-wordmark"></i>
           </li>
           <li>
             <i className="devicon-css3-plain-wordmark"></i>
+          </li>
+          <li>
+            <i class="devicon-sass-original"></i>
           </li>
           <li>
             <i className="devicon-javascript-plain"></i>

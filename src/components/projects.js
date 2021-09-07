@@ -113,6 +113,15 @@ const Projects = () => {
               <img src={portfolio} alt="portfolio" />
             </div>
           </div>
+          <div className="project">
+            <h3 className="project-title">Upcoming Project</h3>
+            <div className="project-content">
+              <h4>
+                An Ecommerce store built using Typescript, SASS with focus on
+                architecture. Coming soon...
+              </h4>
+            </div>
+          </div>
         </div>
       </section>
     </>
