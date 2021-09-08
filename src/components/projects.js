@@ -74,7 +74,7 @@ const Projects = () => {
                   <span>NextJs</span>.
                   <br />
                   <br />
-                  I'll keep <span>improving</span> hpow it looks and how it
+                  I'll keep <span>improving</span> how it looks and how it
                   performs.
                 </p>
                 <ul>
