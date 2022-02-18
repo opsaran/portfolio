@@ -218,6 +218,11 @@ nav .logo-name {
   font-size: 1.2rem;
 }
 
+@media (max-width: 600px) {
+  .about {
+    width: 90%;
+  }
+}
 /* Skillset styling */
 .skillset {
   margin-top: 3rem;
@@ -324,11 +329,11 @@ nav .logo-name {
 
 .project-content {
   width: 100%;
-  padding: 1rem;
+  padding: 2rem 1rem;
   display: flex;
 
   justify-content: space-between;
-  align-items: center;
+  align-items: top;
   border-radius: 7px;
   box-shadow: 0 0 4px 7px rgba(224, 212, 212, 0.1);
 }
@@ -348,7 +353,7 @@ nav .logo-name {
   letter-spacing: 0.07rem;
   color: var(--fourth-color);
   word-spacing: 0.1rem;
-  padding: 2rem;
+  padding-left: 2rem;
 }
 
 .project-info > p > span {

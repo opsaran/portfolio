@@ -31,11 +31,21 @@ const Skillset = () => {
           <li>
             <i className="devicon-mongodb-plain-wordmark"></i>
           </li>
+
           <li>
             <i className="devicon-express-original-wordmark expressjs"></i>
           </li>
           <li>
+            <i className="devicon-figma-plain"></i>
+          </li>
+          <li>
             <i className="devicon-git-plain-wordmark"></i>
+          </li>
+          <li>
+            <i className="devicon-wordpress-plain"></i>
+          </li>
+          <li>
+            <i className="devicon-woocommerce-plain"></i>
           </li>
         </ul>
       </section>

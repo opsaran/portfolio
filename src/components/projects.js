@@ -1,11 +1,73 @@
 import quizApp from "../images/quizApp.png";
 import portfolio from "../images/portfolio.png";
+import ecommerce from "../images/ecommerce.png";
 const Projects = () => {
   return (
     <>
       <section id="projects" className="projects-section">
         <h1>Projects</h1>
         <div className="projects-wrapper">
+          <div className="project">
+            <h3 className="project-title">Ecommerce Platform</h3>
+            <div className="project-content">
+              <img src={ecommerce} alt="quiz-app" />
+              <div className="project-info">
+                <p>
+                  A <span>Ecommerce</span> platform built using{" "}
+                  <span>TypeScript</span>.
+                  <br />
+                  <br />
+                  My goal was to build a prject which tests my ablitites to
+                  solve problems. I didn't use any unnecessary library to speed
+                  up things. <span>Sass</span> is a great tool if you want to
+                  really scale the project, Thus, learning and implementing it
+                  was awesome.
+                  <br />
+                  <br />
+                  It was undoubtedly a herculean task to reach this point while
+                  also working as a freelancer.
+                </p>
+                <ul>
+                  <li>
+                    <i className="devicon-typescript-plain colored"></i>
+                  </li>
+                  <li>
+                    <i className="devicon-mongodb-plain-wordmark colored"></i>
+                  </li>
+                  <li>
+                    <i className="devicon-express-original colored"></i>
+                  </li>
+                  <li>
+                    <i className="devicon-react-original colored"></i>
+                  </li>
+                  <li>
+                    <i className="devicon-nodejs-plain colored"></i>
+                  </li>
+                  <li>
+                    <i className="devicon-sass-original colored"></i>
+                  </li>
+                </ul>
+                <div className="project-links">
+                  <a
+                    href="https://opsaran.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>View live</span>
+                    <i className="fas fa-external-link-alt"></i>
+                  </a>
+                  <a
+                    href="https://github.com/opsaran/Ecommerce-frontend"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>Source code</span>
+                    <i className="devicon-github-original"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="project">
             <h3 className="project-title">Quiz App</h3>
             <div className="project-content">
@@ -111,15 +173,6 @@ const Projects = () => {
                 </div>
               </div>
               <img src={portfolio} alt="portfolio" />
-            </div>
-          </div>
-          <div className="project">
-            <h3 className="project-title">Upcoming Project</h3>
-            <div className="project-content">
-              <h4>
-                An Ecommerce store built using Typescript, SASS with focus on
-                architecture. Coming soon...
-              </h4>
             </div>
           </div>
         </div>
