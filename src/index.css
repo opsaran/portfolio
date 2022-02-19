@@ -148,13 +148,22 @@ nav .logo-name {
 
 /* description styling starts here */
 .description {
-  padding-top: 4rem;
+  padding-top: 7rem;
+  margin: auto;
   color: var(--second-color);
   font-family: Grafik, sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 4rem;
 }
 
+.description .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .description .intro .italicise {
   color: var(--third-color);
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -191,11 +200,71 @@ nav .logo-name {
   }
 }
 
+.hero-image > img {
+  filter: contrast(200%);
+}
+
+.typing-text-effect {
+  display: flex;
+  position: relative;
+}
+
+.typing-text-effect > h2 {
+  font-size: 25px;
+  position: relative;
+  top: -5px;
+}
+.changing-text {
+  list-style: none;
+
+  padding: 0;
+  margin-left: 0.8rem;
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.changing-text > li {
+  position: relative;
+  top: 0;
+  font-size: 25px;
+  animation: slide 6s steps(3) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -90px;
+  }
+}
+.changing-text > li > span {
+  position: relative;
+  color: var(--third-color);
+}
+
+.changing-text > li > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 105%;
+  left: 0;
+  border-left: 1px solid white;
+  background-color: black;
+  animation: typing 2s steps(14) infinite;
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -15px 0 15px;
+  }
+}
+
 /* about styling starts here */
 .about {
   width: 70%;
   position: relative;
   margin: 4rem auto;
+  margin-top: 6rem;
 }
 .about > h1 {
   display: flex;
@@ -220,6 +289,9 @@ nav .logo-name {
 
 @media (max-width: 600px) {
   .about {
+    width: 90%;
+  }
+  .description {
     width: 90%;
   }
 }
@@ -253,16 +325,18 @@ nav .logo-name {
 }
 
 .skillset ul {
+  margin: 0;
+  padding: 0;
   color: var(--fourth-color);
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  gap: 3rem 1rem;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .skillset ul li {
-  margin-bottom: 3rem;
-  padding: 0 1rem 0 1rem;
+  /* margin-bottom: 3rem;
+  padding: 0 1rem 0 1rem; */
   transition: color 400ms ease-out;
 }
 
@@ -274,10 +348,10 @@ nav .logo-name {
   font-size: 4rem;
   /* padding: 2px 4rem; */
 }
-.skillset .expressjs,
+/* .skillset .expressjs,
 .skillset .nodejs {
   font-size: 6rem;
-}
+} */
 .skillset ul > li:hover {
   color: var(--third-color);
 
@@ -301,10 +375,22 @@ nav .logo-name {
   }
 }
 
+@media (max-width: 480px) {
+  .description {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .skillset ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-image > img {
+    object-fit: cover;
+  }
+}
 /* projects styling starts here */
 .projects-section {
   width: 80%;
-  margin: 2rem auto;
+  margin: 3rem auto 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -320,7 +406,7 @@ nav .logo-name {
 }
 
 .project {
-  margin-top: 3rem;
+  margin-bottom: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -459,7 +545,7 @@ nav .logo-name {
   box-sizing: content-box;
   line-height: 1.5rem;
   padding: 0;
-  margin: 0.5rem 1rem 1rem 1.1rem;
+  margin: 0.5rem 0rem 1rem 0rem;
   width: 100%;
   background-color: transparent;
   color: var(--second-color);
@@ -482,6 +568,8 @@ nav .logo-name {
   width: 100%;
   border: 1px solid var(--fourth-color);
   transition: 100ms ease-in;
+  margin: 0;
+  padding: 0;
 }
 
 .contact-form > div:hover > fieldset {
@@ -493,6 +581,7 @@ nav .logo-name {
   color: var(--fourth-color);
   position: absolute;
   top: 1rem;
+  left: 0.5rem;
   padding: 0 0.2rem;
   background-color: black;
   transition: 100ms ease-in;
@@ -503,6 +592,7 @@ nav .logo-name {
   color: var(--fourth-color);
   position: absolute;
   top: 1rem;
+  left: 0.5rem;
   padding: 0 0.2rem;
   background-color: black;
   transition: 100ms ease-in;
@@ -513,6 +603,7 @@ nav .logo-name {
   color: var(--fourth-color);
   position: absolute;
   top: 1rem;
+  left: 0.5rem;
   padding: 0 0.2rem;
   background-color: black;
   transition: 100ms ease-in;
@@ -616,6 +707,9 @@ button:hover {
 }
 
 @media (max-width: 680px) {
+  .description {
+    width: 80%;
+  }
   .contact {
     flex-direction: column-reverse;
     align-items: center;
@@ -626,6 +720,11 @@ button:hover {
   .contact-form {
     margin-top: 2rem;
     width: 70%;
+    align-items: center;
+  }
+
+  .contact-form > div {
+    width: 100%;
   }
   .contact-socials {
     margin: 2rem 0 0 0;
