@@ -379,6 +379,10 @@ nav .logo-name {
   .description {
     width: 100%;
     flex-direction: column-reverse;
+    margin-bottom: 1rem;
+  }
+  .about {
+    margin-top: 2rem;
   }
   .skillset ul {
     grid-template-columns: repeat(3, 1fr);
@@ -502,6 +506,9 @@ nav .logo-name {
   }
   .project-content img {
     width: 100%;
+  }
+  .project:nth-of-type(even) .project-content img {
+    margin-top: 2rem;
   }
   .project .project-info > p {
     padding: 1.5rem 0;
