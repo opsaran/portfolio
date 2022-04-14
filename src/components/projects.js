@@ -10,7 +10,6 @@ const Projects = () => {
           <div className="project">
             <h3 className="project-title">Ecommerce Platform</h3>
             <div className="project-content">
-              <img src={ecommerce} alt="quiz-app" />
               <div className="project-info">
                 <p>
                   A <span>Ecommerce</span> platform built using{" "}
@@ -66,12 +65,13 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
+              <img src={ecommerce} alt="quiz-app" loading="lazy" />
             </div>
           </div>
           <div className="project">
             <h3 className="project-title">Quiz App</h3>
             <div className="project-content">
-              <img src={quizApp} alt="quiz-app" />
+              <img src={quizApp} alt="quiz-app" loading="lazy" />
               <div className="project-info">
                 <p>
                   <span>Attempt</span> quiz, <span>campare</span> results and{" "}
@@ -172,7 +172,7 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <img src={portfolio} alt="portfolio" />
+              <img src={portfolio} alt="portfolio" loading="lazy" />
             </div>
           </div>
         </div>

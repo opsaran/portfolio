@@ -27,7 +27,7 @@ const Description = () => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={myself} alt="" />
+          <img src={myself} alt="OP Saran" width={250} height={215} />
         </div>
       </section>
 

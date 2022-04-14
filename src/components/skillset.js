@@ -17,7 +17,7 @@ const Skillset = () => {
             <i className="devicon-css3-plain-wordmark"></i>
           </li>
           <li>
-            <i class="devicon-sass-original"></i>
+            <i className="devicon-sass-original"></i>
           </li>
           <li>
             <i className="devicon-javascript-plain"></i>
